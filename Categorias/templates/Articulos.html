@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<!-- cabeza donde se agregan etiquetas y links que no se muestran en la web-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Computer: Ofertas del Mes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'CSS/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+<!-- cuerpo de la web-->
+<body>
+<!-- aqui empieza la cabecera de la web-->
+    <header class="site-header site-footer">
+        <div class="contenedor">
+            <!-- contenedor de barra con los links redirigidos-->
+            <div class="barra">
+                <a href="/index">
+                    <img src="{% static 'img/LogoEmpresa.png' %}" alt="LogoEmpresa">
+                </a>
+                <nav class="navegacion">
+                    <a href="/index">Inicio</a>
+                    <a href="/ofertas">Ofertas</a>
+                    <a href="#">Destacados</a>
+                    <a href="#">Noticias</a>
+                </nav>
+            </div>
+
+            <div>
+                <h1 class="fw-300 centrar-texto">Las Mejores Ofertas del Mes con Nosotros!!</h1>
+            </div>
+        </div>
+    </header>
+<!-- main que contiene la galeria de imagenes de productos destacados -->
+    <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Productos Destacados</h2>
+
+        <div class="contenedor-anuncios">
+            <div class="anuncio">
+                <img src="{% static 'img/PC GAMER TECNOCAM.jfif' %}" alt="PC GAMER TECNOCAM">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">PC GAMER TECNOCAM</h3>
+                    <p>PC GAMER TECNOCAM I5 -9400 2,9GHZ TURBO 4,20 GHZ MEMORIA RAM 16GB DISCO DURO 1TB DVD VIDEO GTX1650 4GB FREEDOS.</p>
+                    <p class="precio">$798.000.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/NOTEBOOK ASUS ZENBOOK.jpg' %}" alt="NOTEBOOK ASUS ZENBOOK">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">NOTEBOOK ASUS ZENBOOK</h3>
+                    <p class="Parrafo">NOTEBOOK ASUS ZENBOOK / INTEL CORE I7 / 8GB RAM / 512GB SSD / NVIDIA /14' FHD. </p>
+                    <p class="precio padding">$839.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/SAMSUNG GALAXY S10+ NEGRO 128GB.jpg' %}" alt=" SAMSUNG GALAXY S10+ 129GB">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">SAMSUNG GALAXY S10+ NEGRO 128GB</h3>
+                    <p>Aterriza en la notable conectividad que Samsung tiene para ti con el genial Smartphone Galaxy S10+.</p>
+                    <p class="precio padding">$859.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Notebook Huawei Matebook.png' %}" alt=" Notebook Huawei Matebook ">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Notebook Huawei Matebook 13 Core i5 8GB"</h3>
+                    <p>El Huawei MateBook 14 (2020) está fabricado en una aleación de aluminio y acabado en color gris. Mide 307,5 mm de ancho, 223,8.</p>
+                    <p class="precio padding">$799.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Notebook Asus X409UJ-BV044T.jpg' %}" alt=" Notebook Asus X409UJ-BV044T ">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Notebook Asus X409UJ-BV044T</h3>
+                    <p>ASUS X543 presenta una sólida construcción, condiciones ideales para usuarios que siempre están fuera de casa.</p>
+                    <p class="precio padding">$429.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Consola Nintendo Switch Neón.jpg' %}" alt=" Consola Nintendo Switch Neón ">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Consola Nintendo Switch Neón</h3>
+                    <p>Base de Nintendo Switch, Adaptador de corriente, Cable HDMI, Controles Joy-Con izquierdo y derecho.
+                    </p>
+                    <p class="precio padding">$359.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Bundle Mega Pack PS4 Slim 1TB + Control Dualshock4 + 3 Juegos + Cupón Fortnite Voucher.jpg' %}" alt=" Bundle Mega Pack PS4 Slim 1TB + Control Dualshock4 + 3 Juegos + Cupón Fortnite Voucher">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Bundle Mega Pack PS4 Slim 1TB</h3>
+                    <p>Bundle Mega Pack PS4 Slim 1TB + Control Dualshock4 + 3 Juegos + Cupón Fortnite Voucher.
+                        <br>
+                        <br></p>
+                    <p class="precio padding">$399.999.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Celular Huawei P40 Pro.png' %}" alt=" Celular Huawei P40 Pro">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Celular Huawei P40 Pro</h3>
+                    <p>Lo que vemos en el Huawei P40 Pro es una pantalla OLED de 6,58 pulgadas con resolución de 1.080 x 2.640 píxeles.</p>
+                    <p class="precio padding">$$879.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Minicomponente LG OK55.jpg' %}" alt=" Minicomponente LG OK55">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Minicomponente LG OK55</h3>
+                    <p>El Party Link inalámbrico permite conectar dos sistemas Party Link de LG para crear un sonido envolvente.</p>
+                    <p class="precio padding">$169.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Notebook Lenovo S340-14IIL.jpg' %}" alt=" Notebook Lenovo S340-14IIL">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Notebook Lenovo S340-14IIL</h3>
+                    <p>Funciones enfocadas en escuchar, mirar y vivir tu portatil conectado o desconectado con bateria de larga duración y tecnología de carga rápida.</p>
+                    <p class="precio padding">$549.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Celular Samsung Galaxy S20 Ultra.jpg' %}" alt=" Celular Samsung Galaxy S20 Ultra ">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">Celular Samsung Galaxy S20 Ultra</h3>
+                    <p>Aterriza en la notable conectividad que Samsung tiene para ti con el genial Smartphone Galaxy S10+.Descubre a Galaxy S20, S20+ y S20 Ultra.</p>
+                    <p class="precio padding">$859.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/Notebook Acer Nitro 5.jpg' %}" alt=" Notebook Acer Nitro 5 ">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">SAMSUNG GALAXY S10+ NEGRO 128GB</h3>
+                    <p>Juega como los profesionales con el Acer Nitro 5. Equipado con el nuevo procesador Quad Core AMD RYZEN™ 5.</p>
+                    <p class="precio padding">$859.990.-</p>
+                    <a href="#" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- pie de pagina-->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="/index">Inicio</a>
+                <a href="/ofertas">Ofertas</a>
+                <a href="#">Destacados</a>
+                <a href="#">Noticias</a>
+            </nav>
+
+            <p class="copyright">Todos los Derechos Reservados 2020 &COPY;</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

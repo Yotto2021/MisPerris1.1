@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<!-- cabeza donde se agregan etiquetas y links que no se muestran en la web-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Computer: Ofertas del Mes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'CSS/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+</head>
+<!-- cuerpo de la web-->
+<body>
+<!-- aqui empieza la cabecera de la web-->
+    <header class="site-header site-footer">
+        <div class="contenedor">
+            <!-- div que contiene la barra donde se encuentran los link redirigidos-->
+            <div class="barra">
+                <a href="/index">
+                    <img src="{% static 'img/LogoEmpresa.png' %}" alt="LogoEmpresa">
+                </a>
+                <nav class="navegacion">
+                    <!-- link que vuelve a la pagina principal-->
+                    <a href="/index">Inicio</a>
+                    <!-- link que redirecciona a la pagina de ofertas-->
+                    <a href="/Articulos">Ofertas</a>
+                    <a href="#">Destacados</a>
+                    <a href="#">Noticias</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="{% static 'img/Logo Principal.jpg' %}" alt="Imagen Principal">
+    <!-- main que contiene el formulario y su validacion-->
+    <main class="contenedor seccion">
+
+        <h2 class="fw-300 centrar-texto contenido-centrado">Llena el Formulario de Contacto</h2>
+
+        <form action="" method="POST">
+
+            <fieldset>
+
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre"  placeholder="Tu Nombre" required=""
+                 maxlength="60">
+
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Tu Correo Electronico" required=""
+                maxlength="50">
+
+                <label for="celular">Celular:</label>
+                <input type="phone" id="celular" pattern="[0-9+  ]{1,15}"
+                placeholder="+569 12341234" required="" minlength="8" maxlength="9">
+
+                <label for="productos">Categorias:</label>
+                <select name="productos" id="productos">
+
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="">CELULARES</option>
+                    <option value="">COMPUTADORES</option>
+                    <option value="">CONSOLAS</option>
+                    <option value="">ACCESORIOS COMPUTACIÓN</option>
+
+                </select>
+
+                <label for="mensaje">Mensaje o Consultas:</label>
+                <textarea name="mensaje" id="mensaje" maxlength="500"></textarea>
+            
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Contacto</legend>
+
+                <p>Como desea ser Contactado:</p>
+
+                <div class="forma-contacto"></div>
+
+                <label for="celular">Celular</label>
+                <input type="radio" name="Contacto" value="celular" id="celular" checked="">
+
+                <label for="email">E-mail</label>
+                <input type="radio" name="Contacto" value="email" id="email"  checked="">
+
+
+                <p>Si eligió Celular, elija la fecha y hora</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton boton-crimson">
+
+        </form>
+
+    </main>
+<!-- pie de pagina-->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="/index">Inicio</a>
+                <a href="/Articulos">Ofertas</a>
+                <a href="#">Destacados</a>
+                <a href="#">Noticias</a>
+            </nav>
+
+            <p class="copyright">Todos los Derechos Reservados 2020 &COPY;</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

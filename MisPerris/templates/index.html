@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- cabeza donde se agregan etiquetas y links que no se muestran en la web-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Computer: Venta de dispositivos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'CSS/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+<!-- cuerpo de la web-->
+<body>
+<!-- aqui empieza la cabecera de la web-->
+    <header class="site-header inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/index">
+                    <img src="{% static 'img/LogoEmpresa.png' %}" alt="LogoEmpresa">
+                </a>
+                <!-- links que redirigen a otras paginas -->
+                <nav class="navegacion">
+                    <a href="/index">Inicio</a>
+                    <a href="/Articulos">Ofertas</a>
+                    <a href="#">Destacados</a>
+                    <a href="#">Noticias</a>
+                </nav>
+            </div>
+
+            <h1>Lo último en Tecnología</h1>
+        </div>
+    </header>
+<!-- termino de cabecera-->
+<!-- seccion que contiene la informacion de los dueños de la pagina-->
+    <section class="contenedor seccion">
+        <h2 class="fw-300 centrar-texto">Más Sobre Nosotros</h2>
+
+        <div class="iconos-nosotros">
+            <div class="icono icono1">
+                <img src="{% static 'img/Quienes Somos.png' %}" alt="Quienes Somos">
+                <h3>¿Quienes Somos?</h3>
+                <p>Somos una empresa chilena dedicada en vender productos tecnológicos con el fin de acercar la tecnología a los clientes ya sea empresas o personas particulares tratando de dar los mejores precios del mercado.</p>
+            </div>
+            <div class="icono">
+                <img src="{% static 'img/Mejor Precio.png' %}" alt="Mejor Precio">
+                <h3>El Mejor Precio</h3>
+                <P>Como empresa queremos lo mejor para nuestros clientes como la calidad de nuestros productos hasta tratar de entregarles el mejor precio del mercado con el fin de potenciar a nuestros clientes para que nos sigan prefiriendo.</P>
+            </div>
+            <div class="icono">
+                <img src="{% static 'img/Calidad.png' %}" alt="Calidad">
+                <H3>Calidad</H3>
+                <p>Nuestro propósito es entregar a nuestros clientes los mejores estándares de calidad por eso nos esforzamos en realizar nuestro trabajo con pasión y cariño para que nuestros clientes se sientan conformes y seguros.</p>
+            </div>
+        </div>
+    </section>
+<!-- main class,seccion donde se muestran los productos destacados-->
+    <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Productos Destacados</h2>
+
+        <div class="contenedor-anuncios">
+            <div class="anuncio">
+                <img src="{% static 'img/PC GAMER TECNOCAM.jfif' %}" alt="PC GAMER TECNOCAM">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">PC GAMER TECNOCAM</h3>
+                    <p>PC GAMER TECNOCAM I5 -9400 2,9GHZ TURBO 4,20 GHZ MEMORIA RAM 16GB DISCO DURO 1TB DVD VIDEO GTX1650 4GB FREEDOS</p>
+                    <p class="precio">$798.000.-</p>
+                    <a href="/Articulos" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/NOTEBOOK ASUS ZENBOOK.jpg' %}" alt="NOTEBOOK ASUS ZENBOOK">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">NOTEBOOK ASUS ZENBOOK</h3>
+                    <p class="Parrafo">NOTEBOOK ASUS ZENBOOK / INTEL CORE I7 / 8GB RAM / 512GB SSD / NVIDIA /14' FHD </p>
+                    <p class="precio padding">$839.990.-</p>
+                    <a href="/Articulos" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="{% static 'img/SAMSUNG GALAXY S10+ NEGRO 128GB.jpg' %}" alt=" SAMSUNG GALAXY S10+ 129GB">
+                <div class="contenido-anuncio">
+                    <h3 class="h3">SAMSUNG GALAXY S10+ NEGRO 128GB</h3>
+                    <p>Aterriza en la notable conectividad que Samsung tiene para ti con el genial Smartphone Galaxy S10+.</p>
+                    <p class="precio padding">$859.990.-</p>
+                    <a href="/Articulos" class="boton boton-negro d-block">Ver Producto</a>
+                </div>
+            </div>
+        </div>
+   <!-- link que redirige a la galeria de las ofertas que ofrece la pagina-->
+        <div class="ver-todas">
+            <a href="/Articulos" class="boton boton-crimson">Ver Todos</a>
+        </div>
+    </main>
+    <!-- seccion que contiene link que redirecciona a pagina Contactanos -->
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+            <h2>¿Tienes dudas? Comunicate con Nosotros!!</h2>
+            <p>Llena el formulario de contacto y un asistente se pondrá en contacto contigo a la brevedad, También puedes comunicarte por las siguientes redes sociales!!</p>
+            <a href="/contacto" class="boton boton-crimson">Contactános!!</a>
+            <div class="redes">
+                <a href="#">
+                    <img src="{% static 'img/Instagram.png' %}" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="{% static 'img/Facebook.png' %}" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="{% static 'img/WhatsApp.png' %}" alt="WhatsApp">
+                </a>
+                <a href="#">
+                    <img src="{% static 'img/Twitter.png' %}" alt="Twitter">
+                </a>
+            </div>
+        </div>
+    </section>
+<!-- div que muestra el blog de la empresa-->
+    <div class="seccion-inferior contenedor seccion">
+        <section class="blog">
+            <h3 class="centrar-texto fw-300">Nuestro Blog</h3>
+
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="{% static 'img/Arma tu PC.jpg' %}" alt="Arma tu PC">
+                </div>
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Arma tu PC con Nosotros!!</h4>
+                    </a>
+                    <p>Escrito el: <span> 04/09/2020 </span> por: <span> Admin </span> </p>
+                    <p>Guías y Consejos para Armar tu PC, Aprende a saber que Componentes son compatibles</p>
+                </div>
+            </article>
+
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="{% static 'img/Reviw de Productos.jpg' %}" alt="Reviw de Productos">
+                </div>
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Reviw de Nuestros Productos</h4>
+                    </a>
+                    <p>Escrito el: <span> 04/09/2020 </span> por: <span> Admin </span> </p>
+                    <p>Mira con Nosotros las Reviw de Nuestros Productos</p>
+                </div>
+            </article>
+        </section>
+<!-- seccion de comentarios-->
+        <section class="comentarios">
+            <h3 class="centrar-texto fw-300">Comentarios de los Clientes</h3>
+            <div class="comentario">
+                <blockquote>
+                    El PC Gamer que me recomendaron cumple con mis expectativas, muy buena atención y disposición, un excelente servicio.
+                </blockquote>
+                <p>- Lucas Cartes</p>
+            </div>
+        </section>
+    </div>
+<!-- pie de pagina-->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="/index">Inicio</a>
+                <a href="/Articulos">Ofertas</a>
+                <a href="#">Destacados</a>
+                <a href="#">Noticias</a>
+            </nav>
+
+            <p class="copyright">Todos los Derechos Reservados 2020 &COPY;</p>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>
